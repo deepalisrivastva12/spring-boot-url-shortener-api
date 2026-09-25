@@ -1,6 +1,6 @@
 # URL Shortener API
 
-A production-style RESTful URL shortening service built with **Java 17 + Spring Boot 3**.
+A production-style RESTful URL shortening service built with **Java 21 + Spring Boot 3**.
 Implements the full CRUD lifecycle for short URLs plus access-count statistics,
 a public redirect endpoint, layered architecture, validation, centralized
 error handling, unit + integration tests, Swagger docs, and Docker support.
@@ -56,7 +56,7 @@ Layers, top to bottom:
 
 | Concern              | Choice                                   |
 |-----------------------|-------------------------------------------|
-| Language / Runtime    | Java 17                                   |
+| Language / Runtime    | Java 21                                   |
 | Framework             | Spring Boot 3.3 (Web, Data JPA, Validation, Actuator) |
 | Database (default)    | H2 in-memory (zero setup, resets per run) |
 | Database (optional)   | MySQL 8 (via `mysql` Spring profile)      |
@@ -104,7 +104,7 @@ src/test/java/.../
 
 ## Getting Started
 
-**Prerequisites:** Java 17+, Maven 3.9+ (or use the included `mvnw` if you add
+**Prerequisites:** Java 21+, Maven 3.9+ (or use the included `mvnw` if you add
 the wrapper — plain `mvn` works fine too).
 
 ```bash
